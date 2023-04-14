@@ -1,6 +1,7 @@
+///File nay cau hinh cac role
 const allRoles = {
-  user: [],
-  admin: ['getUsers', 'manageUsers'],
+  user: ['manageHomes','createHomes'],
+  admin: ['getUsers', 'manageUsers','manageHomes','createHomes'],
 };
 
 const roles = Object.keys(allRoles);

@@ -15,7 +15,16 @@ const password = (value, helpers) => {
   return value;
 };
 
+const domain = (value, helpers) =>{
+  if(!value.match(/^[a-zA-Z0-9_]+$/)){
+    return res.send('Domain accecpt only letter, number and "_"');
+  }
+  return value;
+};
+
+
 module.exports = {
   objectId,
   password,
+  domain,
 };
